@@ -2,6 +2,9 @@ package main
 
 import (
 	"fmt"
+	"go_tutorials/shared"
+	"go_tutorials/tut1"
+	// Import the shared package
 )
 
 const pi float32 = 3.14
@@ -74,4 +77,7 @@ func main() {
 		fmt.Println(i, s.getArea())
 	}
 
+	// Using imported public method from shared package
+	fmt.Println(shared.PublicMethod())
+	fmt.Println(tut1.PublicMethod())
 }
